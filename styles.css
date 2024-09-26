@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'PokemonFont';
+    src: url('path/to/pokemon-font.woff2') format('woff2'),
+         url('path/to/pokemon-font.woff') format('woff');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=113448), auto;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: brown;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    width: 80%;
+    max-width: 1200px; 
+    margin: 20px auto;
+    text-align: center;
+}
+
+.centro {
+    margin: 20px auto;
+}
+
+#pesquisar {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=113449), auto;
+    width: 100%;
+    max-width: 400px; 
+    height: 50px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #e9e513;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+
+button.centro {
+    width: 100%;
+    max-width: 200px; 
+    height: 50px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #e9e513;
+    color: rgb(17, 17, 17);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+
+.imgCentro {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #pesquisar {
+        max-width: 100%; 
+    }
+
+    button.centro {
+        max-width: 100%; 
+    }
+}
+
+#BotaoEnviar {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=113450), auto;
+}
+
+.pokemon {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+.pokemon-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pokemon img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+.pokemon-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    font-family: 'PokemonFont', Arial, sans-serif;
+    
+}
